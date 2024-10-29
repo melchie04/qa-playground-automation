@@ -1,0 +1,20 @@
+{
+  "name": "qa-playground-automation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test --project=chromium --headed",
+    "code": "npx playwright codegen",
+    "chrome": "npx playwright test --project=chromium",
+    "webkit": "npx playwright test --project=webkit",
+    "firefox": "npx playwright test --project=firefox"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.48.1",
+    "@types/node": "^22.7.9"
+  }
+}

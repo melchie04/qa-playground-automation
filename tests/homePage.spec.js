@@ -14,7 +14,7 @@ test.describe("Home Page @homePage", () => {
     await homePage.isMiniWebApps();
   });
 
-  test("Validate the Dynamic Table link", async ({
+  test("Check the Dynamic Table link", async ({
     homePage,
     dynamicTablePage,
   }) => {

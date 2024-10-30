@@ -101,10 +101,12 @@ exports.HomePage = class HomePage {
   }
 
   async isHomePage() {
+    console.log("Expected: " + this.url);
     await expect(this.page).toHaveURL(this.url);
   }
 
   async isMiniWebApps() {
+    console.log("Expected: " + this.miniWebAppsUrl);
     await expect(this.page).toHaveURL(this.miniWebAppsUrl);
   }
 };

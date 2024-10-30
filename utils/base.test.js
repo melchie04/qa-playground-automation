@@ -1,6 +1,7 @@
 import { test as base } from "@playwright/test";
 import { HomePage } from "../pages/home.page";
 import { DynamicTablePage } from "../pages/dynamic.table.page";
+import { VerifyYourAccountPage } from "../pages/verify.your.account.page";
 
 export const test = base.extend({
   context: async ({ browser }, use) => {
@@ -22,5 +23,9 @@ export const test = base.extend({
   dynamicTablePage: async ({ page }, use) => {
     const dynamicTablePage = new DynamicTablePage(page);
     await use(dynamicTablePage);
+  },
+  verifyYourAccountPage: async ({ page }, use) => {
+    const verifyYourAccountPage = new VerifyYourAccountPage(page);
+    await use(verifyYourAccountPage);
   },
 });

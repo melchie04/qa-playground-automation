@@ -18,11 +18,18 @@ test.describe("QA Playground", () => {
     await dynamicTablePage.isSpiderManName(name);
   });
 
-  test("Test", async () => {
-    
-  })
+  test("Verify Your Account: Should Enter Valid Code And Assert Success Message", async ({
+    homePage,
+    verifyYourAccountPage,
+  }) => {
+    await homePage.clickLink("verify_your_account_link");
+    await verifyYourAccountPage.isVerifyAccountPage();
+    const code = await verifyYourAccountPage.getValidCode();
+    await verifyYourAccountPage.enterValidCode(code);
+    await verifyYourAccountPage.isSuccessMessageVisible();
+  });
 
   // test("Test", async () => {
-    
+
   // })
 });

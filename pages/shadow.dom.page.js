@@ -1,12 +1,12 @@
 const { expect } = require("@playwright/test");
 
-exports.TagsInputBoxPage = class TagsInputBoxPage {
+exports.ShadowDomPage = class ShadowDomPage {
   constructor(page) {
-    this.url = "https://qaplayground.dev/apps/tags-input-box/";
+    this.url = "https://qaplayground.dev/apps/shadow-dom/";
     this.page = page;
   }
 
-  async isTagsInputBoxPage() {
+  async isShadowDomPage() {
     console.log("Expected: " + this.url);
     await expect.soft(this.page).toHaveURL(this.url);
   }

@@ -1,12 +1,12 @@
 const { expect } = require("@playwright/test");
 
-exports.TagsInputBoxPage = class TagsInputBoxPage {
+exports.RatingRangeSliderPage = class RatingRangeSliderPage {
   constructor(page) {
-    this.url = "https://qaplayground.dev/apps/tags-input-box/";
+    this.url = "https://qaplayground.dev/apps/range-slider/";
     this.page = page;
   }
 
-  async isTagsInputBoxPage() {
+  async isRatingRangeSliderPage() {
     console.log("Expected: " + this.url);
     await expect.soft(this.page).toHaveURL(this.url);
   }

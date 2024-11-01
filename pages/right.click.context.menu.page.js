@@ -1,12 +1,12 @@
 const { expect } = require("@playwright/test");
 
-exports.TagsInputBoxPage = class TagsInputBoxPage {
+exports.RightClickContextMenuPage = class RightClickContextMenuPage {
   constructor(page) {
-    this.url = "https://qaplayground.dev/apps/tags-input-box/";
+    this.url = "https://qaplayground.dev/apps/context-menu/";
     this.page = page;
   }
 
-  async isTagsInputBoxPage() {
+  async isRightClickContextMenuPage() {
     console.log("Expected: " + this.url);
     await expect.soft(this.page).toHaveURL(this.url);
   }

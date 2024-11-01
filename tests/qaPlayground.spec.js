@@ -29,6 +29,10 @@ test.describe("QA Playground", () => {
     await verifyYourAccountPage.isSuccessMessageVisible();
   });
 
+  test.only("Tags Input Box: ", async () => {
+
+  })
+
   // test("Test", async () => {
 
   // })

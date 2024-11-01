@@ -1,12 +1,12 @@
 const { expect } = require("@playwright/test");
 
-exports.TagsInputBoxPage = class TagsInputBoxPage {
+exports.QrCodeGeneratorPage = class QrCodeGeneratorPage {
   constructor(page) {
-    this.url = "https://qaplayground.dev/apps/tags-input-box/";
+    this.url = "https://qaplayground.dev/apps/qr-code-generator/";
     this.page = page;
   }
 
-  async isTagsInputBoxPage() {
+  async isQrCodeGeneratorPage() {
     console.log("Expected: " + this.url);
     await expect.soft(this.page).toHaveURL(this.url);
   }

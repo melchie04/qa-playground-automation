@@ -43,7 +43,7 @@ exports.TagsInputBoxPage = class TagsInputBoxPage {
     await expect(
       this.tags.filter({ hasText: tag }).locator("i")
     ).not.toBeVisible();
-    const expected = tagsCount;
+    const expected = tagsCount - 1;
     console.log("Expected: Removed Count " + expected);
     const actual = await this.tags.count();
     console.log("Actual: Removed Count " + actual);

@@ -29,9 +29,21 @@ test.describe("QA Playground", () => {
     await verifyYourAccountPage.isSuccessMessageVisible();
   });
 
-  test.only("Tags Input Box: ", async () => {
-
-  })
+  test("Tags Input Box: Should Add And Remove Tags And Assert It's Presence And Count", async ({
+    homePage,
+    tagsInputBoxPage,
+  }) => {
+    await homePage.clickLink("tags_input_box_link");
+    await tagsInputBoxPage.isTagsInputBoxPage();
+    const tag = "Playwright";
+    const tagsCount = await tagsInputBoxPage.getTagsCount();
+    await tagsInputBoxPage.addTag(tag);
+    await tagsInputBoxPage.isTagAdded(tag, tagsCount);
+    await tagsInputBoxPage.removeTag(tag);
+    await tagsInputBoxPage.isTagRemoved(tag, tagsCount);
+    await tagsInputBoxPage.removeAll();
+    await tagsInputBoxPage.isAllTagsRemoved();
+  });
 
   // test("Test", async () => {
 

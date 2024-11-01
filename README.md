@@ -6,7 +6,7 @@ Welcome to the QA Playground Automation repository! This project is designed to 
 | ------------------------ | ------ |
 | Dynamic Table            | ✔️ |
 | Verify Your Account      | ✔️ |
-| Tags Input Box           | ⌛ |
+| Tags Input Box           | ✔️ |
 | Multi Level Dropdown     | ⌛ |
 | Sortable List            | ⌛ |
 | New Tab                  | ⌛ |

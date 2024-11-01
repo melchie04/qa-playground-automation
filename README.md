@@ -1,7 +1,7 @@
 # QA Playground Automation
 Welcome to the QA Playground Automation repository! This project is designed to help me learn and experience Playwright, a powerful end-to-end testing framework, through the implementation of the Page Object Model (POM) design pattern.
 
-<img src="https://github.com/melchie04/qa-playground-automation/blob/main/resources/screenshot.jpg?raw=true" alt="QA Playground" width="600"/>
+<img src="https://github.com/melchie04/qa-playground-automation/blob/main/assets/screenshot.jpg?raw=true" alt="QA Playground" width="600"/>
 
 #
 | To Do                    | Status |

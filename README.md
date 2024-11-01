@@ -43,3 +43,23 @@ Welcome to the QA Playground Automation repository! This project is designed to 
 #
 ### ☕ Buy me a coffee?
 [![image](https://img.shields.io/badge/paypal-melchorcallos04@gmail.com-blue?style=flat-square&logo=paypal)](https://www.paypal.com/paypalme/melchorcallos04)
+
+#
+### 📁 Installation:
+To use QA Playground Automation, follow these steps:
+1. Clone the Repository
+```bash
+git clone https://github.com/melchie04/qa-playground-automation.git
+```
+2. Navigate to the Project Directory
+```bash
+cd qa-playground-automation
+```
+3. Install Dependencies
+```bash
+npm install
+```
+4. Run the Automation Test
+```bash
+npm run test
+```

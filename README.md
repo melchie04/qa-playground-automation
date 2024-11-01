@@ -35,6 +35,7 @@ Welcome to the QA Playground Automation repository! This project is designed to 
 ### 🧰 Tools I've Used:
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![Playwright](https://img.shields.io/badge/playwright-%232EAD33?style=for-the-badge&logo=playwright&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
 
 #
 ### 📧 If you find any bugs on the website, please contact me here:

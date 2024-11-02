@@ -8,77 +8,77 @@ exports.HomePage = class HomePage {
     this.mini_web_apps_button = page.getByRole("link", {
       name: "Mini Web Apps",
     });
-    this.links = {
-      dynamic_table_link: page.getByRole("link", {
+    this.challengeCards = {
+      dynamic_table: page.getByRole("link", {
         name: "Dynamic Table",
       }),
-      verify_your_account_link: page.getByRole("link", {
+      verify_your_account: page.getByRole("link", {
         name: "Verify Your Account",
       }),
-      tags_input_box_link: page.getByRole("link", {
+      tags_input_box: page.getByRole("link", {
         name: "Tags Input Box",
       }),
-      multi_level_dropdown_link: page.getByRole("link", {
+      multi_level_dropdown: page.getByRole("link", {
         name: "Multi Level Dropdown",
       }),
-      sortable_list_link: page.getByRole("link", {
+      sortable_list: page.getByRole("link", {
         name: "Sortable List",
       }),
-      new_tab_link: page.getByRole("link", {
+      new_tab: page.getByRole("link", {
         name: "New Tab",
       }),
-      popup_window_link: page.getByRole("link", {
+      popup_window: page.getByRole("link", {
         name: "Pop-Up Window",
       }),
-      nested_frame_link: page.getByRole("link", {
+      nested_frame: page.getByRole("link", {
         name: "Nested Iframe",
       }),
-      shadow_dom_link: page.getByRole("link", {
+      shadow_dom: page.getByRole("link", {
         name: "Shadow DOM",
       }),
-      stars_rating_widget_link: page.getByRole("link", {
+      stars_rating_widget: page.getByRole("link", {
         name: "Stars Rating Widget",
       }),
-      covered_elements_link: page.getByRole("link", {
+      covered_elements: page.getByRole("link", {
         name: "Covered Elements",
       }),
-      upload_file_link: page.getByRole("link", {
+      upload_file: page.getByRole("link", {
         name: "Upload File",
       }),
-      download_file_link: page.getByRole("link", {
+      download_file: page.getByRole("link", {
         name: "Download File",
       }),
-      onboarding_modal_popup_link: page.getByRole("link", {
+      onboarding_modal_popup: page.getByRole("link", {
         name: "Onboarding Modal Popup",
       }),
-      budget_tracker_link: page.getByRole("link", {
+      budget_tracker: page.getByRole("link", {
         name: "Budget Tracker",
       }),
-      right_click_context_menu_link: page.getByRole("link", {
+      right_click_context_menu: page.getByRole("link", {
         name: "Right-Click Context Menu",
       }),
-      mouse_hover_link: page.getByRole("link", {
+      mouse_hover: page.getByRole("link", {
         name: "Mouse Hover",
       }),
-      geolocation_link: page.getByRole("link", {
+      geolocation: page.getByRole("link", {
         name: "Geolocation",
       }),
-      navigation_menu_link: page.getByRole("link", {
+      navigation_menu: page.getByRole("link", {
         name: "Navigation Menu",
       }),
-      redirect_chain_link: page.getByRole("link", {
+      redirect_chain: page.getByRole("link", {
         name: "Redirect Chain",
       }),
-      fetching_data_link: page.getByRole("link", {
+      fetching_data: page.getByRole("link", {
         name: "Fetching Data",
       }),
-      qr_code_generator_link: page.getByRole("link", {
+      qr_code_generator: page.getByRole("link", {
         name: "QR Code Generator",
       }),
-      changeable_frame_link: page.getByRole("link", {
+      changeable_frame: page.getByRole("link", {
         name: "Changeable Iframe",
       }),
-      rating_range_slider_link: page.getByRole("link", {
+      rating_range_slider: page.getByRole("link", {
         name: "Rating Range Slider",
       }),
     };
@@ -92,11 +92,11 @@ exports.HomePage = class HomePage {
     await this.mini_web_apps_button.click();
   }
 
-  async clickLink(linkName) {
-    if (this.links[linkName]) {
-      await this.links[linkName].click();
+  async clickChallengeCard(cardName) {
+    if (this.challengeCards[cardName]) {
+      await this.challengeCards[cardName].click();
     } else {
-      throw new Error(`Link ${linkName} not found.`);
+      throw new Error(`Card ${cardName} not found.`);
     }
   }
 

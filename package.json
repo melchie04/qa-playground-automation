@@ -5,9 +5,9 @@
   "scripts": {
     "test": "npx playwright test",
     "code": "npx playwright codegen https://qaplayground.dev/",
-    "chrome": "npx playwright test --project=chromium --headed",
-    "webkit": "npx playwright test --project=webkit --headed",
-    "firefox": "npx playwright test --project=firefox --headed"
+    "chromium": "npx playwright test --project=chromium",
+    "webkit": "npx playwright test --project=webkit",
+    "firefox": "npx playwright test --project=firefox"
   },
   "keywords": [],
   "author": "",
